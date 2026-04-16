@@ -16,7 +16,6 @@ func GetCodeforcesRating(handle string) ([]models.RatingChange, error) {
 		return nil, err
 	}
 
-
 	ratings := []models.RatingChange{}
 	if result, ok := response.Result.([]interface{}); ok {
 		for _, item := range result {
